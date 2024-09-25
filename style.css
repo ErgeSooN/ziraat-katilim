@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham_Medium/Gotham_medium.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Gotham yazı tipini uygulama */
+body, .navbar-nav .nav-link, .btn, .logo-container {
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.navbar-nav li {
+    padding-right: 64px;
+}
+
+.navbar-nav li a{
+    color: white;
+}
+
+.highlight{
+    font-family: 'Gotham', sans-serif;
+    font-size: 64px;
+    color: #E52629;
+}
+.fatura-text {
+    padding-left: 150px !important; /* Sağ tarafa padding ekleyerek sağa kaydırma */
+}
+
+
+.header1{
+    font-family: 'Gotham', sans-serif;
+    font-size: 64px;
+    color: black;
+    font-weight: 700;
+}
+
+.parag1{
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+/* Ana başlık alanı */
+.header {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* Navbar ayarları */
+.navbar {
+    height: 100px;
+}
+
+.navbar-bg {
+    background-image: url('resimler/Rectangle_4631.png');
+    background-size: cover;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    height: 100px;
+}
+
+.navbar-custom {
+    height: 100px;
+}
+
+.fatura-section
+{
+    background-color: #FEF1F1;
+}
+
+/* Menü elemanları */
+/* .navbar-nav .nav-item {
+    margin-right: 64px;
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-weight: 500;
+} */
+
+/* Butonlara padding ekleme */
+.btn-outline-light, .btn-primary {
+    border-radius: 50px;
+    padding: 15px 20px;
+}
+
+.btn-outline-light {
+    border-color: white;
+    color: white;
+    margin-right: 10px;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: #E52629;
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #E52629;
+    color: white;
+}
+
+/* Row için Arka Plan Ekleme */
+.bg-custom {
+    background-image: url('resimler/KOBI_KATILIM-\ Gri\ background\ 1.png'); /* Arka plan resmi */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+
+
+.phone-section {
+    position: relative;
+    width: 50%; /* Genişliği yazıyla eşitle */
+    height: auto;
+    text-align: center;
+}
+
+
+.small-bg {
+    position: absolute;
+    width: 65%; /* Arka plan görselinin genişliğini küçültelim */
+    top: 10%;  /* Yükseklik ayarı */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.phones-img {
+    position: relative;
+    width: 60%; /* Telefon görselinin genişliğini küçültelim */
+    z-index: 1;
+    height: auto;
+    margin-top: 20px;
+}
+/* Phone section için arka plan */
+
+/*ikinci container*/
+
+.checklist .list-group-item {
+    border: none;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+
+.checklist .list-group-item.active-item {
+    background-color: black;
+    color: white;
+}
+
+.checklist .list-group-item .bi {
+    font-size: 1.5rem;
+}
+
+
+/* test */
+.feature-box {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .phone-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .phone-image {
+    text-align: center;
+  }
+
+  /* Mobilde alanları ayırmak için spacing */
+  @media (max-width: 768px) {
+    .feature-box {
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Başlık stili */
+  .main-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e60000;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  /* Açıklama stili */
+  .sub-heading {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+  }
+/* test bitti*/
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+    .phone-section img {
+        max-width: 90%; /* Küçük ekranlarda genişlik arttırıldı */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+    .container-fluid {
+        display: block !important;
+    }
+    
+    .navbar-buttons {
+        display: none !important;
+    }
+    
+    .navbar-bg {
+        background-image: none;
+    }
+    .navbar-nav li a{
+        color: black;
+    }
+    .navbar-collapse {
+        background-color: white;
+    }   
+}
