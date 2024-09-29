@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ziraat Dijital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="faturalandırma.css">
+</head>
+
+<body>
+
+    <!-- Header: Logo ve Navbar birleşimi -->
+    <div class="container header">
+        <!-- Logo'yu navbar dışında ayrı bir container'a koyuyoruz -->
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <!-- <div class="container-fluid"> -->
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="resimler/Isolation_Mode.png" alt="Logo" width="100" class="m-2">
+                </a>
+            </div>
+            <!-- </div> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-bg">
+
+                <div class="container-fluid navbar-custom">
+                    <!-- Menü -->
+                    <div class="row mt-3">
+                        <div class="collapse navbar-collapse col-7 ps-5" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Ürünler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faturalandırma.html">Paketler</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Bize Ulaşın</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Arama ikonu ve butonlar -->
+                        <div class="d-flex align-items-center justify-content-end navbar-buttons col-5">
+                            <button class="btn btn-outline-light me-4">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <button class="btn btn-outline-light rounded-4 me-2">Platforma Giriş</button>
+                            <button class="btn btn-primary rounded-4">Hemen Başvur</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <section class="custom-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- Başlık Satırı -->
+            <div class="col-12 text-center">
+              <h1>Faturalandırma</h1>
+            </div>
+          </div>
+    
+          <div class="row justify-content-center">
+            <!-- Açıklama Satırı -->
+            <div class="col-md-8 text-center">
+              <p>
+                Cari Hesaplarınızı, Stok Hareketlerinizi, Güncel Kasa Durumlarınızı Gelen Ve Giden <br>Faturalarınızı İzleyin.
+                Stoklarınızı Ve Maliyetlerinizi Takip Edin Ve Karlılığınızı Koruyun.
+              </p>
+            </div>
+          </div>
+    
+          <div class="row justify-content-center">
+            <!-- Buton Satırı -->
+            <div class="col-auto">
+              <a href="#" class="btn btn-custom">
+                Hemen Başvur <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <section class="content-section">
+    <div class="container">
+        <div class="row align-items-center">
+        <!-- Sol Taraf: Görsel -->
+        <div class="col-md-6">
+            <img src="resimler/Anasayfa_blog_1.png" alt="Blog Image" class="img-fluid picture-center">
+        </div>
+
+        <!-- Sağ Taraf: Başlık ve Metin -->
+        <div class="col-md-6 center-text">
+            <h3>Lorem ipsum dolor sit amet</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aliquam eu magna porta, vestibulum ex a, gravida diam. Donec<br> sodales sagittis mauris, et tempus neque vehicula quis. Fusce<br> sodales vel tortor a lobortis. Integer faucibus felis vitae<br> neque rutrum faucibus.
+            Pellentesque et congue eros, sed<br> sollicitudin dolor. Curabitur sit</p>
+        </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section class="content-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Sağ Taraf: Görsel (Mobilde üstte olacak) -->
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="resimler/Anasayfa_blog_2.png" alt="Blog Image" class="img-fluid rounded picture-center">
+        </div>
+  
+        <!-- Sol Taraf: Başlık ve Metin (Mobilde altta olacak) -->
+        <div class="col-md-6 order-2 order-md-1 center-text">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Aliquam eu magna porta, vestibulum ex a, gravida diam. Donec<br> sodales sagittis mauris, et tempus neque vehicula quis. Fusce<br> sodales vel tortor a lobortis. Integer faucibus felis vitae<br> neque rutrum faucibus.
+            Pellentesque et congue eros, sed<br> sollicitudin dolor. Curabitur sit</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="content-section">
+      <div class="row">
+        <!-- Metin Alanı -->
+        <div class="col-md-12">
+          <!-- İlk Başlık -->
+          <h3 class="custom-title">Lorem ipsum dolor sit amet</h3>
+          
+          <!-- İlk Paragraflar -->
+          <p class="custom-paragraph">Mauris, et tempus neque vehicula quis. Fusce sodales vel tortor a lobortis. Integer faucibus felis vitae neque rutrum faucibus. Pellentesque et congue eros, sed sollicitudin dolor. Curabitur sit amet interdum arcu, in sodales est. Cras hendrerit nibh at enim efficitur, eget euismod massa porttitor. Quisque nulla dui, egestas sed fringilla convallis, pharetra nec urna. Aliquam fringilla at nisl et posuere. Fusce et tortor sagittis, lobortis orci non, scelerisque augue.</p>
+          
+          <p class="custom-paragraph">Ut id laoreet orci, molestie tincidunt sem. Ut dictum est nibh, sit amet varius tortor tempor sed. Praesent congue, velit sit amet eleifend congue, nulla dolor convallis justo, in facilisis mi dolor sed dui. Duis fringilla bibendum finibus. Etiam vitae laoreet est, et porttitor metus. Vestibulum faucibus lacinia commodo. Duis nulla quam, pharetra ac libero eget, ornare finibus quam.</p>
+          
+          <!-- İkinci Başlık (Kırmızı) -->
+          <h3 class="highlight-title">Lorem ipsum dolor sit amet</h3>
+          
+          <!-- İkinci Paragraflar -->
+          <p class="custom-paragraph">Etiam tincidunt imperdiet placerat. In tempor sed sapien vitae ultrices. Integer nec quam nibh. Nullam metus tortor, commodo vitae ligula eget, finibus scelerisque lorem. Mauris sollicitudin lobortis tempus. Ut et ligula vitae lorem laoreet sagittis eu faucibus ligula. Aliquam egestas efficitur massa id convallis.</p>
+          
+          <p class="custom-paragraph">Tincidunt nec elit. Fusce vel lectus finibus, laoreet turpis et, porta dui. Etiam tincidunt volutpat lorem, vel aliquet ante ornare eget. In ullamcorper urna ullamcorper, ultrices nisi ut, auctor nunc. Aliquam egestas elit quam, eget dignissim nisl pulvinar blandit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid footer py-4">
+    <div class="row justify-content-center align-items-center">
+      <!-- Sol Bölüm - Sosyal Medya İkonları -->
+      <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+        <p>© 2024 Kobi Katılım Dijital</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+  
+      <!-- Orta Bölüm - Navigasyon Bağlantıları -->
+      <div class="col-lg-5 text-center mb-3 mb-lg-0">
+        <a href="#" class="me-3">Ücret ve Limitler</a>
+        <a href="#" class="me-3">Yasal Bilgilendirmeler</a>
+        <a href="#" class="me-3">SSS</a>
+        <a href="#">Gizlilik</a>
+      </div>
+  
+      <!-- Sağ Bölüm - Müşteri Hizmetleri -->
+      <div class="col-lg-3 text-center text-lg-end">
+        <p class="customer-service">Müşteri Hizmetleri<br> 0850 242 54 84</p>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

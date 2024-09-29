@@ -1,0 +1,269 @@
+    @font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham_Medium/Gotham_medium.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    }
+
+    /* Gotham yazı tipini uygulama */
+    body, .navbar-nav .nav-link, .btn, .logo-container {
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    }
+
+    /* Navbar ayarları */
+    .navbar-nav li {
+    padding-right: 64px;
+    }
+
+    .navbar-nav li a{
+    color: white;
+    border-radius: 15px;
+    }
+
+    .navbar-nav li a:hover{
+    background-color: #F24447 !important;
+    }
+
+    .header {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+    .navbar {
+    height: 100px;
+    }
+
+    .navbar-bg {
+    background-image: url('resimler/Rectangle_4631.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    }
+
+    .navbar-custom {
+    height: 100px;
+    }
+
+    .btn-outline-light, .btn-primary {
+    border-radius: 50px;
+    padding: 15px 20px;
+    }
+
+    .btn-outline-light {
+    border-color: white;
+    color: white;
+    margin-right: 10px;
+    }
+
+    .btn-outline-light:hover {
+    background-color: white;
+    color: #E52629;
+    }
+
+    .btn-primary {
+    background-color: white;
+    color: black;
+    border: none;
+    }
+
+    .btn-primary:hover {
+    background-color: #E52629;
+    color: white;
+    }
+    /*navbar bitiş */
+
+    /* ilk metin*/
+    .custom-section {
+      background-image: url('resimler/KOBI_KATILIM-\ Gri\ background\ 1.png');  /* Arka plan rengi */
+      padding: 60px 0; /* Yukarı ve aşağı boşluk */
+      padding-top: 160px;
+    }
+
+    .custom-section h1 {
+      font-size: 2.5rem; /* Büyük başlık boyutu */
+      font-weight: bold; /* Kalın yazı stili */
+      margin-bottom: 20px; /* Başlık ile metin arasında boşluk */
+    }
+
+    .custom-section p {
+      font-size: 18px; /* Açıklama metni boyutu */
+      color: black; /* Açıklama metni rengi */
+      margin-bottom: 30px; /* Metin ile buton arasında boşluk */
+    }
+
+    .btn-custom {
+      background-color: #dc3545; /* Butonun kırmızı arka plan rengi */
+      border-radius: 25px; /* Yuvarlak köşeler */
+      padding: 10px 30px; /* Butonun boyutlarını artırmak için boşluk */
+      color: white; /* Yazı rengini beyaz yap */
+      font-weight: bold;
+      background-color: #E52629;
+    }
+
+    .btn-custom i {
+      margin-left: 10px; /* Ok simgesi ile yazı arasına boşluk */
+    }
+
+    /* ilk metin bitiş*/
+
+    .content-section img {
+      width: 90%; /* Görselin sütun genişliğinin tamamını kaplaması */
+      max-height: 400px; /* Görselin maksimum yüksekliğini ayarla */
+      object-fit: cover; /* Görselin tam olarak sığmasını sağla, taşmalar engellenir */
+      border-radius: 15px; /* Görselin köşelerini yuvarlat */
+      padding: 40px 0;;
+    }
+
+    h3 {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8; /* Metinler arası boşluk (satır yüksekliği) */
+    }
+  
+    .custom-title {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+  
+      .highlight-title {
+        color: red;
+        font-weight: bold;
+        margin-top: 40px;
+      }
+  
+      .custom-paragraph {
+        line-height: 1.8; /* Satır arası boşluk */
+        margin-bottom: 20px; /* Paragraflar arasında boşluk */
+      }
+  
+      .content-section {
+        padding: 20px 0 ; /* Dışarıdan genel boşluklar */
+        margin-top: 20px;
+      }
+  
+      /* Başlık ve Paragrafların Sağ ve Sol Kenar Boşlukları */
+      .custom-title, .highlight-title, .custom-paragraph {
+        margin-left: 0px;
+        margin-right: 150px;
+      }
+    /*footer */
+
+    .footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    
+    .footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      display: inline-block;
+      font-size: 0.9rem;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer .social-icons {
+      display: inline-block; /* İkonları aynı hizaya getir */
+    }
+    
+    .footer .social-icons a {
+      margin: 0 10px;
+      font-size: 24px;
+      color: white;
+    }
+    
+    .footer .social-icons a:hover {
+      color: #ddd;
+    }
+    
+    .footer p {
+      margin-top: 10px;
+      font-size: 0.8rem;
+    }
+
+    /*footer bitiş */
+
+    @media (max-width: 768px) {
+
+
+      .picture-center{
+        width: 100% !important;
+      }
+      .center-text {
+        text-align: center;
+      }
+
+      .custom-title, .highlight-title, .custom-paragraph {
+        text-align: center;
+        margin-left: 5px !important;
+        margin-right: 0px !important; 
+      }
+
+      .footer a {
+        display: block; /* Mobilde linkler alt alta gelsin */
+        margin: 10px 0;
+        text-align: center; /* Mobilde linkleri ortala */
+      }
+    
+      .footer .social-icons {
+        display: flex; /* Mobilde ikonları yan yana getir */
+        justify-content: center;
+      }
+    
+      .footer .social-icons a {
+        font-size: 20px;
+        margin: 0 8px; /* Mobilde ikon aralarındaki boşluğu azalt */
+      }
+    
+      .footer p {
+        font-size: 0.8rem;
+      }
+      .phone-section img {
+          max-width: 90%; /* Küçük ekranlarda genişlik arttırıldı */
+      }
+  
+      .navbar-nav {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .navbar-nav .nav-item {
+          margin-right: 0;
+          margin-bottom: 10px;
+      }
+  
+      h1 {
+          font-size: 1.75rem;
+      }
+      .container-fluid {
+          display: block !important;
+      }
+      
+      .navbar-buttons {
+          display: none !important;
+      }
+      
+      .navbar-bg {
+          background-image: none;
+      }
+      .navbar-nav li a{
+          color: black;
+      }
+      .navbar-collapse {
+          background-color: white;
+      }
+  }

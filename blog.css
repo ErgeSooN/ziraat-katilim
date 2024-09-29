@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham_Medium/Gotham_medium.otf') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Gotham yazı tipini uygulama */
+body, .navbar-nav .nav-link, .btn, .logo-container {
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+ /* Navbar ayarları */
+ .navbar-nav li {
+    padding-right: 64px;
+    }
+
+    .navbar-nav li a{
+    color: white;
+    border-radius: 15px;
+    }
+
+    .navbar-nav li a:hover{
+    background-color: #F24447 !important;
+    }
+
+    .header {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+
+    .navbar {
+    height: 100px;
+    }
+
+    .navbar-bg {
+    background-image: url('resimler/Rectangle_4631.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    }
+
+    .navbar-custom {
+    height: 100px;
+    }
+
+    .btn-outline-light, .btn-primary {
+    border-radius: 50px;
+    padding: 15px 20px;
+    }
+
+    .btn-outline-light {
+    border-color: white;
+    color: white;
+    margin-right: 10px;
+    }
+
+    .btn-outline-light:hover {
+    background-color: white;
+    color: #E52629;
+    }
+
+    .btn-primary {
+    background-color: white;
+    color: black;
+    border: none;
+    }
+
+    .btn-primary:hover {
+    background-color: #E52629;
+    color: white;
+    }
+    /*navbar bitiş */
+
+  /* Kobi Katılım */
+
+  .custom-container {
+    background-image: url('resimler/Frame\ 40586.png');
+    background-repeat: no-repeat;
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+  }
+
+  /* Sol taraf stil ayarları */
+  .custom-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .custom-container p {
+    font-size: 1.2rem;
+  }
+
+  /* Telefon görselleri için yeni isimlendirilmiş stil */
+  .phone-display {
+    position: relative;
+  }
+
+  .phone-display img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .display-phone1 {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  .display-phone2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .qr-section {
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    width: fit-content;
+  }
+
+  .store-buttons {
+    margin-top: 20px;
+    margin-bottom: 25px
+  }
+
+  .store-buttons img {
+    margin-right: 10px;
+  }
+  .apple{
+    margin-bottom: 25px;
+  }
+
+  .qr-store{
+    margin-bottom: 9rem !important;
+  }
+
+  .telephone-404{
+    margin-top: -85px;
+  }
+
+  .Kobi{
+    font-size: 65px;
+    line-height: 65px;
+  }
+
+.Kobi-dijital{
+  font-size: 65px;
+  line-height: 65px;
+  }
+  /* Kobi Katılım Bitiş */
+
+  /*blog */
+  .blog-container{
+    padding-top: 12rem !important;
+    background-image: url('resimler/KOBI_KATILIM-\ Gri\ background\ 1.png');
+  }
+
+  .blog-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .blog-card img {
+    border-radius: 15px;
+  }
+
+  .blog-card h5 {
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .blog-card p {
+    color: #6c757d;
+  }
+
+  .blog-link {
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .blog-link:hover {
+    text-decoration: underline;
+  }
+
+  /*blog bitiş*/
+
+  /*footer */
+
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer .social-icons {
+    display: inline-block; /* İkonları aynı hizaya getir */
+  }
+  
+  .footer .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #ddd;
+  }
+  
+  .footer p {
+    margin-top: 10px;
+    font-size: 0.8rem;
+  }
+
+  /*footer bitiş */
+  .download-btn{
+    display: none !important;
+  }
+
+/* Responsive düzenlemeler */
+@media (max-width: 768px) {
+
+    .footer a {
+      display: block; /* Mobilde linkler alt alta gelsin */
+      margin: 10px 0;
+      text-align: center; /* Mobilde linkleri ortala */
+    }
+  
+    .footer .social-icons {
+      display: flex; /* Mobilde ikonları yan yana getir */
+      justify-content: center;
+    }
+  
+    .footer .social-icons a {
+      font-size: 20px;
+      margin: 0 8px; /* Mobilde ikon aralarındaki boşluğu azalt */
+    }
+  
+    .footer p {
+      font-size: 0.8rem;
+    }
+    .phone-section img {
+        max-width: 90%; /* Küçük ekranlarda genişlik arttırıldı */
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .mobil-qr{
+      display: none;
+    }
+  
+    .custom-container {
+      background-image: url('resimler/mobil-red-bg.png');
+      background-repeat: no-repeat;
+      padding: 35px 0px 0px 0px !important;
+    }
+    .Kobi{
+      font-size: 35px;
+      text-align: center;
+    }
+    .custom-container p {
+      font-size: 1.2rem;
+      margin: 0px 0px 25px 0px !important;
+      text-align: center;
+    }
+    .apple{
+      margin-bottom: 0px !important;
+    }
+    .qr-store {
+      margin-bottom: 2rem !important;
+    }
+    .download-btn{
+      display: grid  !important;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+    .container-fluid {
+        display: block !important;
+    }
+    
+    .navbar-buttons {
+        display: none !important;
+    }
+    
+    .navbar-bg {
+        background-image: none;
+    }
+    .navbar-nav li a{
+        color: black;
+    }
+    .navbar-collapse {
+        background-color: white;
+    }
+}

@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telefon ve Arka Plan Üst Üste</title>
+    <title>Ziraat Dijital</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,13 +40,13 @@
                         <div class="collapse navbar-collapse col-7 ps-5" id="navbarSupportedContent">
                             <ul class="navbar-nav mx-auto">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Ürünler</a>
+                                    <a class="nav-link" href="index.html">Ürünler</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Paketler</a>
+                                    <a class="nav-link" href="faturalandırma.html">Paketler</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
+                                    <a class="nav-link" href="blog.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#">Bize Ulaşın</a>
@@ -66,21 +68,21 @@
     </div>
 
     <!-- Ticari Faaliyetler Container -->
-    <div class="container-fluid my-5 px-0">
+    <div class="container my-5 px-0 ">
         <div class="row align-items-center bg-custom mx-0">
             <!-- Sol taraf: Metin ve butonlar -->
-            <div class="col-md-6">
-                <h1 class="display-4">Ticari faaliyetleriniz<br>ve finansal işlemleriniz<br>tek çatı
+            <div class="col-md-6  order-2 order-md-1">
+                <h1 class="display-4 ust-metin">Ticari faaliyetleriniz<br>ve finansal işlemleriniz<br>tek çatı
                     altında<br>dijitalleşiyor.</h1>
                 <div class="mt-4">
-                    <a href="#" class="btn btn-danger me-3">Hemen Başvur <i class="bi bi-arrow-right"></i></a>
-                    <a href="#" class="btn btn-outline-dark">Keşfet <i class="bi bi-arrow-right"></i></a>
+                    <a href="#" class="btn btn-lg me-3 hemen-basvur ust-button">Hemen Başvur <i class="bi bi-arrow-right-short"></i></a>
+                    <a href="#" class="btn btn-outline-dark btn-lg ust-button">Keşfet <i class=" bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
 
             <!-- Sağ taraf: Telefon görselleri ve arka plan resmi -->
-            <div class="phone-section">
-                <div class="bg-overlay">
+            <div class="phone-section order-1 order-md-2">
+                <div class="bg-overlay ">
                     <img src="resimler/telefon_arkası.png" alt="Background Image" class="img-fluid small-bg">
                     <img src="resimler/v1_123.png" alt="Phones Image" class="img-fluid phones-img">
                 </div>
@@ -88,12 +90,13 @@
         </div>
     </div>
 
+
     <div class="container-fluid fatura-section pt-3 pb-3">
         <div class="container mt-5 mb-5">
         <div class="row align-items-center">
             <!-- Left side: Title and description -->
             <div class="col-md-6">
-                <h1 class="header1">KOBİ Katılım<br>Dijitalde<br><span class="highlight">Fatura Kesmek</span><br>Çok
+                <h1 class="header1 pb-5">KOBİ Katılım<br>Dijitalde<br><span class="highlight">Fatura Kesmek</span><br>Çok
                     Kolay!</h1>
                 <p class="parag1">Faturalarınızın kontrolü sizde, hem kolay ve pratik fatura<br> kesin hem de
                     istediğiniz faturaya istediğiniz anda ulaşın.<br>Faturalarınızı ödemek, gelir idaresi gönderilen
@@ -101,97 +104,527 @@
             </div>
 
             <!-- Right side: Updated phone image and checklist -->
-            <div class="col-md-6 d-flex justify-content-between">
+            <div class="col-md-3 d-flex justify-content-between">
                 <div class="fatura-phone text-center">
                     <img src="resimler/image 32.png" alt="Fatura Uygulaması" class="img-fluid new-phone-img">
                 </div>
+              </div>
+             
 
-                <!-- Checklist items -->
-                <div class="checklist-container ms-4">
-                    <ul class="list-group checklist">
-                        <li class="list-group-item d-flex align-items-center">
-                            <i class="bi bi-check-circle text-danger me-3"></i>
-                            <span>Ödemelerinizi Takip Edin</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center active-item">
-                            <i class="bi bi-check-circle text-danger me-3"></i>
-                            <span>Fatura Kesin</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <i class="bi bi-check-circle text-danger me-3"></i>
-                            <span>Pratik ve Hızlı Sorgulama Yapın</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <i class="bi bi-check-circle text-danger me-3"></i>
-                            <span>Gelen Faturalarınızı Görün</span>
-                        </li>
-                        <li class="list-group-item d-flex align-items-center">
-                            <i class="bi bi-check-circle text-danger me-3"></i>
-                            <span>KDV’nizi Takip Edin</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+
+            <div class="col-md-3">
+              <!-- Checklist items -->
+              <div class="checklist-container ms-4 d-none d-md-block">
+                  <!-- Bu bölüm masaüstünde görünecek -->
+                  <ul class="list-group checklist pt-5">
+                      <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-check-circle text-danger me-3"></i>
+                          <span>Ödemelerinizi Takip Edin</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center active-item">
+                          <i class="bi bi-check-circle text-danger me-3"></i>
+                          <span>Fatura Kesin</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-check-circle text-danger me-3"></i>
+                          <span>Pratik ve Hızlı Sorgulama Yapın</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-check-circle text-danger me-3"></i>
+                          <span>Gelen Faturalarınızı Görün</span>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center">
+                          <i class="bi bi-check-circle text-danger me-3"></i>
+                          <span>KDV’nizi Takip Edin</span>
+                      </li>
+                  </ul>
+              </div>
+          
+              <!-- Mobilde carousel olarak görünecek bölüm -->
+              <div id="checklistCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+                  <div class="carousel-inner carousel-slider pt-5">
+                      <div class="carousel-item active">
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-check-circle text-danger me-3"></i>
+                              <span>Ödemelerinizi Takip Edin</span>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-check-circle text-danger me-3"></i>
+                              <span>Fatura Kesin</span>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-check-circle text-danger me-3"></i>
+                              <span>Pratik ve Hızlı Sorgulama Yapın</span>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-check-circle text-danger me-3"></i>
+                              <span>Gelen Faturalarınızı Görün</span>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="d-flex align-items-center">
+                              <i class="bi bi-check-circle text-danger me-3"></i>
+                              <span>KDV’nizi Takip Edin</span>
+                          </div>
+                      </div>
+                  </div>
+          
+                
+                  <div class="carousel-item active  justify-content-between d-flex">
+                    <button class="bi bi-arrow-left-short custom-btn" type="button" data-bs-target="#checklistCarousel" data-bs-slide="prev">
+                      <span aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="bi bi-arrow-right-short custom-btn" type="button" data-bs-target="#checklistCarousel" data-bs-slide="next">
+                      <span aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+              </div>
+          </div>
+          
+
+
+
         </div>
     </div>
 </div>
- <!-- Test -->
- <div class="container my-5">
+
+<div class="container my-5 pt-5">
     <!-- Üst Başlık ve Açıklama -->
     <div class="row">
       <div class="col-12">
-        <h1 class="main-heading">Banka Hesap Hareketlerinize Anında Erişin!</h1>
+        <h1 class="main-heading">Banka Hesap Hareketlerinize <span style="color: black;"> Anında Erişin!</h1></h1>
         <p class="sub-heading">
-          Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.
+          Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda <br>görünsün.
           Aynı zamanda kendi ekibinize yetki vererek hesap hareketlerini görmelerini sağlayabilirsiniz.
         </p>
       </div>
     </div>
 
-    <div class="row">
-      <!-- Sol Kolon - 2 Özellik Kutusu Alt Alta -->
-      <div class="col-lg-4  col-md-5 col-12">
-        <div class="feature-box">
-          <h3>Bankanız Cebinizde</h3>
-          <p>Tüm banka hesap hareketleri tek ekranda!</p>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <!-- Telefon Görseli - Mobilde Üstte -->
+        <div class="col-lg-3 col-md-2 col-12 px-0 py-0 order-md-2 order-1">
+          <div class="phone-image px-0 py-0 text-center">
+            <img src="resimler/telefon_3.png" alt="Phone Image" width="100%">
+          </div>
         </div>
-        <div class="feature-box">
-          <h3>Anlık Hesap Hareketleri</h3>
-          <p>Gelen / Giden tüm para transferlerini anında görün.</p>
+    
+        <!-- Sol ve Sağ Kolon - Mobilde Carousel içinde olacak -->
+        <div class="col-lg-4 col-md-5 col-12 px-0 py-0 order-md-1 order-2">
+          <div id="featureCarousel" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <!-- Carousel İçeriği -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="feature-box">
+                  <h3>Bankanız Cebinizde</h3>
+                  <p>Tüm banka hesap hareketleri tek ekranda!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-box">
+                  <h3>Anlık Hesap Hareketleri</h3>
+                  <p>Gelen / Giden tüm para transferlerini anında görün.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-box">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-box">
+                  <h3>Hareket ile faturayı eşleştir</h3>
+                  <p>Faturaların kapanışlarını takip etmek artık çok kolay. Gelen para transferine tıklayın ve fatura ile ilişkilendirin.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-box">
+                  <h3>Detaylı Filtreler</h3>
+                  <p>Hesaplarınızdaki hareketlerin Fatura veya banka fişi ile ilişkilendirildiğini kontrol edin.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="feature-box">
+                  <h3>Lorem Ipsum</h3>
+                  <p>Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item active  justify-content-between d-flex">
+              <button class="bi bi-arrow-left-short custom-btn" type="button" data-bs-target="#featureCarousel" data-bs-slide="prev">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="bi bi-arrow-right-short custom-btn" type="button" data-bs-target="#featureCarousel" data-bs-slide="next">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+    
+          <!-- Masaüstü görünümü için sol kutular -->
+          <div class="d-none d-md-block">
+            <div class="feature-box">
+              <h3>Bankanız Cebinizde</h3>
+              <p>Tüm banka hesap hareketleri tek ekranda!</p>
+            </div>
+            <div class="feature-box">
+              <h3>Anlık Hesap Hareketleri</h3>
+              <p>Gelen / Giden tüm para transferlerini anında görün.</p>
+            </div>
+            <div class="feature-box">
+              <h3>Lorem Ipsum</h3>
+              <p>Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.</p>
+            </div>
+          </div>
         </div>
-        <div class="feature-box">
+    
+        <!-- Sağ Kolon (Masaüstü için) -->
+        <div class="col-lg-4 col-md-5 col-12 px-0 py-0 order-md-3 d-none d-md-block">
+          <div class="feature-box">
+            <h3>Hareket ile faturayı eşleştir</h3>
+            <p>Faturaların kapanışlarını takip etmek artık çok kolay. Gelen para transferine tıklayın ve fatura ile ilişkilendirin.</p>
+          </div>
+          <div class="feature-box">
+            <h3>Detaylı Filtreler</h3>
+            <p>Hesaplarınızdaki hareketlerin Fatura veya banka fişi ile ilişkilendirildiğini kontrol edin.</p>
+          </div>
+          <div class="feature-box">
             <h3>Lorem Ipsum</h3>
             <p>Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.</p>
-        </div>
-      </div>
-
-      <!-- Orta Kolon - Telefon Görseli -->
-      <div class="col-lg-4 col-md-2 col-12">
-        <div class="phone-image">
-          <img src="resimler/telefon_3.png" alt="Phone Image">
-        </div>
-      </div>
-
-      <!-- Sağ Kolon - 3 Özellik Kutusu Alt Alta -->
-      <div class="col-lg-4  col-md-5 col-12">
-        <div class="feature-box">
-          <h3>Hareket ile faturayı eşleştir</h3>
-          <p>Faturaların kapanışlarını takip etmek artık çok kolay. Gelen para transferine tıklayın ve fatura ile ilişkilendirin.</p>
-        </div>
-        <div class="feature-box">
-          <h3>Detaylı Filtreler</h3>
-          <p>Hesaplarınızdaki hareketlerin Fatura veya banka fişi ile ilişkilendirildiğini kontrol edin.</p>
-        </div>
-        <div class="feature-box">
-          <h3>Lorem Ipsum</h3>
-          <p>Ziraat Katılım Hesabınıza gönderilen EFT/Havale işlemi anında KOBİ Katılım Dijital uygulamanızda görünsün.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
- <!-- Test bitti -->
+
+
+  <!---test -->
+
+<div class="container  my-5 bg-red d-flex pt-5">
+  <div class="row g-5 align-items-center">
+    <!-- Sol Taraf - Başlık, Açıklama ve Buton -->
+    <div class="col-lg-5 mt-0">
+      <div class="text-white  pb-5 pt-3 cebindeki-pos">
+        <div class="Cebindeki"> Cebindeki </div>
+        <div class="Pos"> POS</div>
+        <div class="pos-paragraf pb-3">
+          Faturanızı kesin ve ödemenizi alın. İster müşterinize SMS ile ödeme linki iletin, isterseniz hemen kart bilgilerini girerek ödemenizi alın. Üstelik müşterilerinize taksitli ödeme imkanı sunun.
+        </div>
+        <a href="#" class="btn btn-light btn-lg">POS Oranları →</a>
+      </div>
+    </div>
+
+    <!-- Sağ Taraf - Telefon Görselleri ve Butonlar -->
+    <div class="col-lg-7 d-flex align-items-center">
+          <img src="resimler/cift-telefon-1.png" alt="Telefon 2" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<div class="container my-5 pt-5">
+  <div class="row align-items-center">
+    <!-- Sol Taraf - Telefon Görseli ve Butonlar (Masaüstünde Sol, Mobilde Altta) -->
+    <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1">
+        <img src="resimler/firma-rapor-telefon.png" alt="Telefon Görseli" class="img-fluid w-100">
+    </div>
+
+    <!-- Sağ Taraf - Başlık ve Açıklama (Masaüstünde Sağ, Mobilde Üstte) -->
+    <div class="col-lg-7 order-1 order-lg-2 firma-rapor">
+      <div class="Firma pb-5 text-center text-lg-start">
+        Firmanızı<br> Raporlayın ve <span style="color: #E52629;">Kârlılığınızı Arttırın!</span>
+      </div>
+      <div class="Firma-paragraf text-center text-lg-start">
+        Cari hesaplarınızı, stok hareketlerinizi, güncel kasa durumlarınızı gelen ve giden faturalarınızla izleyin. Stoklarınızı ve  maliyetlerinizi takip edin ve kârlılığınızı koruyun.  KOBİ Katılım Dijital detaylı raporlama ekranları ile  müşterilerinize doğru ve hızlı veri ulaştırmanızı sağlar.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid Haberler my-5">
+  <div class="row">
+    <div class="Haberler-header col-lg-10 p-5">Bizden Haberler</div>
+    <div class="Haberler-arrow col-lg-2 p-5">
+      <div class="carousel-item active">
+        <button class="bi bi-arrow-left-short custom-btn" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+          <span aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="bi bi-arrow-right-short custom-btn" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+          <span aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Carousel -->
+  <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner ">
+      <!-- İlk carousel item -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095907.png" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095906.png" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095905.png" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- İkinci carousel item -->
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095904.png" class="d-block w-100" alt="Slide 4">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095907.png" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+          <div class="col-12 mb-5 col-lg-4">
+            <img src="resimler/Frame_48095906.png" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div class="container my-5">
+  <div class="row align-items-center mb-4">
+    <!-- Başlık Kısmı -->
+    <div class="col-12 col-md-10">
+      <h2 class="blog-title">Kobi Katılım Hizmet Paketleri</h2>
+    </div>
+    
+    <!-- Link Kısmı -->
+    <div class="col-12 col-md-2 text-md-end text-start">
+      <a href="#" class="blog-link">Kontör Paketleri <i class="bi bi-arrow-right-short"></i></a>
+    </div>
+  </div>
+</div>
+    <div class="row g-4">
+      <!-- Silver Paket -->
+      <div class="col-lg-3 col-md-6">
+        <div class="pricing-card silver">
+            <h3 class="bg-dark-title">Silver</h3>
+          <ul>
+            <li>E-Fatura</li>
+            <li>Ön Muhasebe</li>
+            <li>Web Uygulaması</li>
+            <li>Mobil Uygulama</li>
+            <li>Bankacılık İşlemleri</li>
+            <li>Cep POS</li>
+            <li>500 Kontör (6 Ay)</li>
+          </ul>
+          <div class="">
+          <div class="price">
+            <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                Ücretsiz <a href="#" class="btn btn-outline-dark btn-custom">Kampanya Detay <i class="bi bi-arrow-right-short"></i></a>
+            </div>
+        </div>
+        </div>
+          
+        </div>
+      </div>
+
+      <!-- Gold Paket -->
+      <div class="col-lg-3 col-md-6">
+        <div class="pricing-card gold">
+            <h3 class="bg-gold-title">Gold</h3>
+          <ul>
+            <li>E-Fatura</li>
+            <li>Ön Muhasebe</li>
+            <li>Web Uygulaması</li>
+            <li>Mobil Uygulama</li>
+            <li>Bankacılık İşlemleri</li>
+            <li>Cep POS</li>
+            <li>500 Kontör (6 Ay)</li>
+          </ul>
+            <div class="price">
+                <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                    2.775 TL/Yıl
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Platinum Paket -->
+      <div class="col-lg-3 col-md-6">
+        <div class="pricing-card platinum">
+            <h3 class="bg-platinum-title">Platinum</h3>
+          <ul>
+            <li>E-Fatura</li>
+            <li>Ön Muhasebe</li>
+            <li>Web Uygulaması</li>
+            <li>Mobil Uygulama</li>
+            <li>Bankacılık İşlemleri</li>
+            <li>Cep POS</li>
+            <li>500 Kontör (6 Ay)</li>
+          </ul>
+          <div class="price">
+            <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                4.200 TL/Yıl
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Premium Paket -->
+      <div class="col-lg-3 col-md-6">
+        <div class="pricing-card premium">
+            <h3 class="bg-premium-title">Premium</h3>
+          <ul>
+            <li>E-Fatura</li>
+            <li>Ön Muhasebe</li>
+            <li>Web Uygulaması</li>
+            <li>Mobil Uygulama</li>
+            <li>Bankacılık İşlemleri</li>
+            <li>Cep POS</li>
+            <li>500 Kontör (6 Ay)</li>
+          </ul>
+          <div class="price">
+            <div class="d-flex flex-column h-100 justify-content-center align-items-center">
+                20.000 TL/Yıl
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="row align-items-center custom-container">
+      <!-- Sol Taraf - Metinler ve QR Kodlar -->
+      <div class="col-lg-6 mb-5">
+        <div class="Kobi h1">KOBİ Katılım Dijital</div>
+        <p class="my-5">Ticari faaliyetleriniz, banka ve finansal işlemleriniz<br> tek çatı altında dijitalleşiyor.</p>
+        <!-- QR Kodu ve Butonlar Flexbox Yapısında -->
+        <div class="d-flex align-items-center qr-store">
+          <div class="qr-section">
+            <img src="resimler/Group 40562.png" alt="QR Kod" class="mobil-qr">
+          </div>
+          <div class="ms-4">
+            <a href="#" > <img class="apple" src="resimler/Group apple.png" alt="App Store"></a>
+            <a href="#" > <img src="resimler/Group android.png" alt="Google Play"></a>
+          </div>
+          
+        </div>
+        <div class="d-grid gap-2 mb-5 download-btn">
+          <button type="button" class="btn btn-light">Mobil Uygulamayı İndir</button>
+        </div>
+      </div>
+
+      <!-- Sağ Taraf - Telefon Görselleri -->
+      <div class="col-lg-6">
+        <div class="phone-display position-relative">
+          <img src="resimler/image 404.png" class="telephone-404">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container my-5">
+    <div class="row align-items-center mb-4">
+      <!-- Başlık Kısmı -->
+      <div class="col-12 col-md-10">
+        <h2 class="blog-title">KOBİ Katılım Blog</h2>
+      </div>
+      
+      <!-- Link Kısmı -->
+      <div class="col-12 col-md-2 text-md-end text-start">
+        <a href="#" class="blog-link">Tüm Blog Yazıları <i class="bi bi-arrow-right-short"></i></a>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <!-- Blog Kartı 1 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <img src="resimler/Anasayfa_blog_1.png" class="img-fluid" alt="Blog 1">
+          <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+          <p>Aenean ac felis feugiat nisl gravida condimentum. Nam tincidunt vulputate.</p>
+        </div>
+      </div>
+
+      <!-- Blog Kartı 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <img src="resimler/Anasayfa_blog_2.png" class="img-fluid" alt="Blog 2">
+          <h5>Ut id laoreet orci, molestie tincidunt sem.</h5>
+          <p>Aenean ac felis feugiat nisl gravida condimentum. Nam tincidunt vulputate.</p>
+        </div>
+      </div>
+
+      <!-- Blog Kartı 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="blog-card">
+          <img src="resimler/Anasayfa_blog_3.png" class="img-fluid" alt="Blog 3">
+          <h5>In tempor sed sapien vitae ultrices. Integer nec quam nibh.</h5>
+          <p>Aenean ac felis feugiat nisl gravida condimentum. Nam tincidunt vulputate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid footer py-4">
+    <div class="row justify-content-center align-items-center">
+      <!-- Sol Bölüm - Sosyal Medya İkonları -->
+      <div class="col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+        <p>© 2024 Kobi Katılım Dijital</p>
+        <div class="social-icons">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+  
+      <!-- Orta Bölüm - Navigasyon Bağlantıları -->
+      <div class="col-lg-5 text-center mb-3 mb-lg-0">
+        <a href="#" class="me-3">Ücret ve Limitler</a>
+        <a href="#" class="me-3">Yasal Bilgilendirmeler</a>
+        <a href="#" class="me-3">SSS</a>
+        <a href="#">Gizlilik</a>
+      </div>
+  
+      <!-- Sağ Bölüm - Müşteri Hizmetleri -->
+      <div class="col-lg-3 text-center text-lg-end">
+        <p class="customer-service">Müşteri Hizmetleri<br> 0850 242 54 84</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
